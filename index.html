@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portfolio — Jiahao Zhang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f172a',
+                        secondary: '#06b6d4',
+                        accent: '#10b981'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-900 text-white antialiased">
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-gray-800/90 backdrop-blur z-50">
+        <nav class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="logo text-2xl font-bold">JZ</div>
+                <div class="hidden md:block text-sm text-gray-300">Portfolio</div>
+            </div>
+
+            <ul class="hidden md:flex gap-6 items-center text-sm">
+                <li><a href="#inicio" class="hover:text-secondary">Inicio</a></li>
+                <li><a href="#sobre-mi" class="hover:text-secondary">Sobre mí</a></li>
+                <li><a href="#formacion" class="hover:text-secondary">Formación</a></li>
+                <li><a href="#habilidades" class="hover:text-secondary">Habilidades</a></li>
+                <li><a href="#experiencia" class="hover:text-secondary">Experiencia</a></li>
+                <li><a href="#proyectos" class="hover:text-secondary">Proyectos</a></li>
+                <li><a href="#futuro" class="hover:text-secondary">Mi futuro</a></li>
+                <li><a href="#contacto" class="hover:text-secondary">Contacto</a></li>
+            </ul>
+
+
+            <div class="flex items-center gap-3">
+                <a href="https://linkedin.com/in/jiahao-zhang-99b75533a" target="_blank" class="text-secondary hover:text-white transition"><i class="fab fa-linkedin text-xl"></i></a>
+                <a href="https://github.com/Jiahao06" target="_blank" class="text-secondary hover:text-white transition"><i class="fab fa-github text-xl"></i></a>
+                <button id="dark-mode-toggle" class="p-2 rounded-md hover:bg-gray-700 md:hidden"><i class="fas fa-moon"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero / Inicio -->
+    <main>
+    <section id="inicio" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary to-gray-800 pt-20">
+        <div class="container mx-auto px-4 text-center">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="text-left">
+                    <h1 class="text-5xl md:text-6xl font-extrabold mb-4">Jiahao Zhang</h1>
+                    <p class="text-lg text-secondary font-semibold mb-6">Apasionado por la informática, el hardware y la ciberseguridad</p>
+
+                    <p class="mb-6 max-w-xl">
+                        Estudiante de Administración de Sistemas Informáticos en Red con experiencia en soporte técnico, configuración de servicios de red (DNS, DHCP, WEB) y proyectos prácticos en hardware y desarrollo web. Busco crecer en ciberseguridad y administración de sistemas aportando curiosidad, responsabilidad y ganas de aprender.
+                    </p>
+
+                    <div class="flex flex-wrap gap-3">
+                        <a href="Jiahao.Zhang_CV.pdf" download target="_blank" download class="px-5 py-3 rounded-lg bg-secondary text-gray-900 font-medium hover:scale-105 transition">Descargar CV</a>
+                        <a href="#proyectos" class="px-5 py-3 rounded-lg border border-secondary text-secondary hover:bg-secondary hover:text-gray-900 transition">Ver proyectos</a>
+                        <a href="#contacto" class="px-5 py-3 rounded-lg border border-gray-600 text-gray-300 hover:bg-gray-700 transition">Contactar</a>
+                    </div>
+                </div>
+
+                <div class="flex justify-center">
+                    <img src="f5893c1b-1301-46c5-9cfc-135a4e095dd7.JPG" alt="Foto Jiahao" class="w-64 h-64 rounded-xl object-cover border-4 border-secondary shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Sobre mí -->
+<section id="sobre-mi" class="py-16 bg-gray-900">
+  <div class="container mx-auto px-4 max-w-4xl">
+    <h2 class="text-3xl font-bold text-center mb-8">Sobre mí</h2>
+    <div class="bg-gray-800 p-8 rounded-lg scroll-reveal">
+      <p class="mb-4">
+        Hola — soy <strong>Jiahao Zhang</strong>. Tengo 18 años y estudio Administración de Sistemas Informáticos en Red en La Salle Gràcia. Desde pequeño me ha apasionado desmontar y entender los ordenadores; hoy me interesa especialmente la <strong>ciberseguridad</strong> y la administración de servicios de red (DNS, DHCP, servidores web).
+      </p>
+
+      <h3 class="text-xl font-semibold mt-4 mb-2">Mis valores</h3>
+      <ul class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+        <li class="bg-primary p-3 rounded-lg text-sm"><i class="fas fa-check-circle mr-2 text-secondary"></i>Puntualidad</li>
+        <li class="bg-primary p-3 rounded-lg text-sm"><i class="fas fa-users mr-2 text-secondary"></i>Trabajo en equipo</li>
+        <li class="bg-primary p-3 rounded-lg text-sm"><i class="fas fa-brain mr-2 text-secondary"></i>Curiosidad</li>
+        <li class="bg-primary p-3 rounded-lg text-sm"><i class="fas fa-user-shield mr-2 text-secondary"></i>Compromiso</li>
+      </ul>
+
+      <!-- Idiomas -->
+      <h3 class="text-xl font-semibold mt-6 mb-4">Idiomas</h3>
+      <div class="space-y-4">
+        <div>
+          <p class="flex items-center text-gray-300 mb-1">
+            <i class="fas fa-flag text-secondary mr-2"></i>Chino (Nativo)
+          </p>
+          <div class="w-full bg-gray-700 rounded-full h-2">
+            <div class="bg-secondary h-2 rounded-full skill-bar" data-width="100"></div>
+          </div>
+        </div>
+        <div>
+          <p class="flex items-center text-gray-300 mb-1">
+            <i class="fas fa-flag text-secondary mr-2"></i>Español (Nativo)
+          </p>
+          <div class="w-full bg-gray-700 rounded-full h-2">
+            <div class="bg-secondary h-2 rounded-full skill-bar" data-width="90"></div>
+          </div>
+        </div>
+        <div>
+          <p class="flex items-center text-gray-300 mb-1">
+            <i class="fas fa-flag text-secondary mr-2"></i>Inglés (Intermedio)
+          </p>
+          <div class="w-full bg-gray-700 rounded-full h-2">
+            <div class="bg-secondary h-2 rounded-full skill-bar" data-width="70"></div>
+          </div>
+        </div>
+        <div>
+          <p class="flex items-center text-gray-300 mb-1">
+            <i class="fas fa-flag text-secondary mr-2"></i>Catalán (Avanzado)
+          </p>
+          <div class="w-full bg-gray-700 rounded-full h-2">
+            <div class="bg-secondary h-2 rounded-full skill-bar" data-width="80"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Formacion -->
+<section id="formacion" class="py-20 bg-gray-800">
+  <div class="container mx-auto px-6 max-w-4xl">
+    <h2 class="text-3xl font-bold text-center mb-8">Formación</h2>
+
+    <div class="space-y-10">
+      <!-- CFGS ASIR -->
+      <div class="scroll-reveal">
+        <h3 class="text-xl font-semibold text-secondary mb-1">
+          CFGS ASIR — Administración de Sistemas Informáticos en Red
+        </h3>
+        <p class="text-gray-300 text-sm mb-2">(La Salle Gràcia) · 09/2024 – Actualmente · 2000h</p>
+        <p class="text-gray-400 text-sm">
+          Formación en administración de sistemas, redes, servicios de Internet y ciberseguridad.
+        </p>
+      </div>
+
+      <!-- Bachillerato -->
+      <div class="scroll-reveal">
+        <h3 class="text-xl font-semibold text-secondary mb-1">
+          Bachillerato tecnológico
+        </h3>
+        <p class="text-gray-300 text-sm mb-2">Escola Pia Balmes · 09/2022 – 06/2024</p>
+        <p class="text-gray-400 text-sm">
+          Trabajo de investigación: <em>Publicidad</em>. Participación en el proyecto pedagógico SUMMEM basado en trabajo cooperativo y aprendizaje por preguntas.
+        </p>
+      </div>
+
+      <!-- Chino -->
+      <div class="scroll-reveal">
+        <h3 class="text-xl font-semibold text-secondary mb-1">
+          Chino (Lengua)
+        </h3>
+        <p class="text-gray-300 text-sm mb-2">Escola Pia Nostra Senyora · 08/2014 – 06/2022</p>
+        <p class="text-gray-400 text-sm">
+          Formación en lengua y cultura china durante 8 años con clases semanales.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Habilidades -->
+<section id="habilidades" class="py-20 bg-gray-900">
+  <div class="container mx-auto px-6 max-w-5xl">
+    <h2 class="text-3xl font-bold text-center mb-8">Habilidades</h2>
+
+    <div class="grid md:grid-cols-2 gap-10 scroll-reveal">
+      <!-- Técnicas -->
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Técnicas</h3>
+
+        <div class="mb-4">
+          <p><i class="fas fa-microchip text-secondary mr-2"></i>Hardware y Software</p>
+          <div class="w-full bg-gray-700 rounded-full h-2 mt-1">
+            <div class="bg-secondary h-2 rounded-full skill-bar" data-width="80"></div>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <p><i class="fas fa-lock text-secondary mr-2"></i>Ciberseguridad</p>
+          <div class="w-full bg-gray-700 rounded-full h-2 mt-1">
+            <div class="bg-secondary h-2 rounded-full skill-bar" data-width="60"></div>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <p><i class="fas fa-tools text-secondary mr-2"></i>Mantenimiento de equipos</p>
+          <div class="w-full bg-gray-700 rounded-full h-2 mt-1">
+            <div class="bg-secondary h-2 rounded-full skill-bar" data-width="82"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Personales -->
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Personales</h3>
+        <ul class="space-y-2 text-sm">
+          <li><i class="fas fa-brain text-secondary mr-2"></i>Capacidad de aprendizaje</li>
+          <li><i class="fas fa-users text-secondary mr-2"></i>Trabajo en equipo</li>
+          <li><i class="fas fa-search text-secondary mr-2"></i>Curiosidad</li>
+          <li><i class="fas fa-check-circle text-secondary mr-2"></i>Responsabilidad</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Experiencia -->
+    <section id="experiencia" class="py-16 bg-gray-800">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <h2 class="text-3xl font-bold text-center mb-8">Experiencia profesional</h2>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- FIATC -->
+                <article class="bg-primary p-6 rounded-lg shadow hover:scale-102 transition">
+                    <header class="flex items-center gap-3 mb-3">
+                        <i class="fas fa-briefcase text-secondary text-2xl"></i>
+                        <h3 class="text-xl font-semibold">Técnico de soporte TI — FIATC Seguros</h3>
+                    </header>
+                    <p class="text-sm text-gray-300 mb-3"><strong>06/2025 – Actualidad</strong> — Barcelona</p>
+                    <ul class="list-disc list-inside text-sm">
+                        <li>Soporte in situ y remoto a usuarios; gestión de tickets y seguimiento.</li>
+                        <li>Creación/administración de cuentas, permisos y políticas de seguridad.</li>
+                        <li>Preparación y despliegue de equipos de trabajo.</li>
+                    </ul>
+                </article>
+
+                <!-- Clover -->
+                <article class="bg-primary p-6 rounded-lg shadow hover:scale-102 transition">
+                    <header class="flex items-center gap-3 mb-3">
+                        <i class="fas fa-utensils text-secondary text-2xl"></i>
+                        <h3 class="text-xl font-semibold">Camarero — Restaurante Clover</h3>
+                    </header>
+                    <p class="text-sm text-gray-300 mb-3"><strong>06/2024 – 09/2024</strong> - Barcelona</p>
+                    <ul class="list-disc list-inside text-sm">
+                        <li>Atención al cliente, caja y organización del servicio.</li>
+                        <li>Trabajo intensivo en horario de alta demanda (54 h/semana).</li>
+                    </ul>
+                </article>
+
+                <!-- Abacus -->
+                <article class="bg-primary p-6 rounded-lg shadow hover:scale-102 transition">
+                    <header class="flex items-center gap-3 mb-3">
+                        <i class="fas fa-store text-secondary text-2xl"></i>
+                        <h3 class="text-xl font-semibold">Estudiante en prácticas — Abacus</h3>
+                    </header>
+                    <p class="text-sm text-gray-300 mb-3"><strong>07/2023 – 08/2023</strong> - Barcelona</p>
+                    <ul class="list-disc list-inside text-sm">
+                        <li>Atención al cliente, organización y gestión de producto.</li>
+                        <li>Trabajo en equipo y soporte en tienda.</li>
+                    </ul>
+                </article>
+
+                <!-- Bar Cigalo -->
+                <article class="bg-primary p-6 rounded-lg shadow hover:scale-102 transition">
+                    <header class="flex items-center gap-3 mb-3">
+                        <i class="fas fa-coffee text-secondary text-2xl"></i>
+                        <h3 class="text-xl font-semibold">Camarero — Bar Cigalo</h3>
+                    </header>
+                    <p class="text-sm text-gray-300 mb-3"><strong>08/2022 – 09/2022</strong> - Hospitalet de Llobregat</p>
+                    <ul class="list-disc list-inside text-sm">
+                        <li>Manejo de caja, atención al cliente y mantenimiento del área.</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="py-16 bg-gray-900">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h2 class="text-3xl font-bold text-center mb-8">Proyectos</h2>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h4 class="text-lg font-semibold mb-2">Montaje y configuración de PC</h4>
+                    <p class="text-sm mb-3">Ensamblaje de componentes, instalación de SO y optimización.</p>
+                    <br>
+                    <br> 
+                    <p class="text-xs text-gray-300">Tecnologías: Hardware PC, Windows/Linux</p>                  
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h4 class="text-lg font-semibold mb-2">Instalación y optimización de SO</h4>
+                    <p class="text-sm mb-3">Instalación de sistemas, configuración de servicios y resolución de problemas.</p>
+                    <br>
+                    <br>
+                    <p class="text-xs text-gray-300">Tecnologías: Windows, Linux, Redes</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h4 class="text-lg font-semibold mb-2">Prácticas básicas de ciberseguridad</h4>
+                    <p class="text-sm mb-3">Análisis de vulnerabilidades en entornos virtuales y uso de herramientas.</p>
+                    <img src="Sysinternals.png" alt="Imagen proyecto" class="w-100 h-100 object-cover rounded-lg mb-4 mx-auto">
+                    <p class="text-xs text-gray-300">Tecnologías: Sysinternals</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h4 class="text-lg font-semibold mb-2">Desarrollo web básico</h4>
+                    <p class="text-sm mb-3">Páginas HTML/CSS/JS creadas durante el curso.</p>
+                    <img src="Captura de pantalla 2025-10-29 193946.png" alt="Imagen proyecto" class="w-100 h-100 object-cover rounded-lg mb-4 mx-auto">
+                    <p class="text-xs text-gray-300">Tecnologías: HTML, CSS, JS</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h4 class="text-lg font-semibold mb-2">Redes: DHCP / DNS / WEB</h4>
+                    <p class="text-sm mb-3">Prácticas de configuración de servicios de red (enlaces a documentación).</p>
+                    <p class="text-xs text-gray-300">
+                    <img src="Serveis.png" alt="Imagen proyecto" class="w-100 h-100 object-cover rounded-lg mb-4 mx-auto">
+                        Recursos: 
+                        <a class="text-secondary hover:underline" href="https://lasallecat-my.sharepoint.com/:b:/g/personal/jiahao_zhang_gracia_lasalle_cat/Ee_vMC6s6iBDmuIQoNCFeQIBJpQb0C9Y1m-2il2M3UQb3g?e=TkCEhx" target="_blank" rel="noopener">DNS</a>,
+                        <a class="text-secondary hover:underline" href="https://lasallecat-my.sharepoint.com/:b:/g/personal/jiahao_zhang_gracia_lasalle_cat/ESavlH2W3N9HsJz2Yz9jMnUBYN2BIpashwtySNFl25JeqA?e=8IxxMK" target="_blank" rel="noopener">DHCP</a>,
+                        <a class="text-secondary hover:underline" href="https://lasallecat-my.sharepoint.com/:b:/g/personal/jiahao_zhang_gracia_lasalle_cat/EWXJA2wnJ_1DpzUT7EcskOgBHWjozTqBySPVCkhTlIOZUw?e=MbkOED" target="_blank" rel="noopener">WEB</a>
+                    </p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h4 class="text-lg font-semibold mb-2">Base de datos — Práctica final</h4>
+                    <p class="text-sm mb-3">Procedures, triggers, export/import y scripts SQL.</p>
+                    <img src="BBDD.png" alt="Imagen proyecto" class="w-50 h-50 object-cover rounded-lg mb-4 mx-auto">
+                    <p class="text-xs text-gray-300">Código: <a class="text-secondary hover:underline" href="https://lasallecat-my.sharepoint.com/:f:/g/personal/jiahao_zhang_gracia_lasalle_cat/EqmuDWxOIV5CgBHodW31DmQBUQffyYCoPSUViqvmldOlqQ?e=hgFClS" target="_blank" rel="noopener">SQL</a></p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h4 class="text-lg font-semibold mb-2">Trabajo de investigación</h4>
+                    <p class="text-sm mb-3">TR de publicidad - Bachillerato</p>
+                    <img src="TR.png" alt="Imagen proyecto" class="w-50 h-50 object-cover rounded-lg mb-4 mx-auto">
+                    <p class="text-xs text-gray-300">Recursos: <a class="text-secondary hover:underline" href="Zhang, Jiahao - Un viatge a través de la publicitat.pdf" target="_blank" rel="noopener">TR en PDF</a></p>
+                </div>
+
+            </div>
+            <p class="mt-6 text-xs text-gray-400">Enlaces y documentación extra según prácticas académicas.</p>
+        </div>
+    </section>
+
+
+<!-- Mi futuro y proyecto profesional -->
+<section id="futuro" class="py-16 bg-gray-800">
+    <div class="container mx-auto px-4 max-w-4xl">
+        <h2 class="text-3xl font-bold text-center mb-8">Mi futuro y proyecto profesional</h2>
+        <div class="bg-gray-900 p-8 rounded-lg scroll-reveal">
+            <p class="mb-6">
+                MMi objetivo a corto plazo es terminar el CFGS ASIR con buenas calificaciones y continuar con mis estudios en el Grado en Ingeniería de Redes de Telecomunicación. Quiero especializarme en áreas como redes, ciberseguridad y administración de sistemas, campos que considero que tienen un gran potencial profesional.
+            </p>
+            <p class="mb-6">
+                Una vez termine el grado, mi meta es conseguir un trabajo estable en el mundo de la ciberseguridad. Mi primer empleo ideal sería en un puesto de soporte en redes o como analista de seguridad en una empresa tecnológica.
+            </p>
+            <p>
+                Estoy comprometido con seguir aprendiendo y mejorando mis habilidades, ya sea a través de cursos, certificaciones o proyectos personales. Me gusta mantenerme al día en un sector que está en constante cambio.            </p>
+        </div>
+    </div>
+</section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-16 bg-gray-900">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-8">Contacto</h2>
+            <div class="grid md:grid-cols-2 gap-6 bg-gray-800 p-6 rounded-lg">
+                <div>
+                    <p class="mb-2"><i class="fas fa-envelope text-secondary mr-2"></i><strong>Correo:</strong> <a class="text-secondary hover:underline" href="mailto:jiahaozhang006@gmail.com">jiahaozhang006@gmail.com</a></p>
+                    <p class="mb-2"><i class="fas fa-phone text-secondary mr-2"></i><strong>Teléfono:</strong> 686905111</p>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt text-secondary mr-2"></i><strong>Ubicación:</strong> Barcelona</p>
+                </div>
+
+                <form class="space-y-4" onsubmit="event.preventDefault(); alert('Gracias — mensaje enviado (simulado).')">
+                    <input type="text" placeholder="Nombre" class="w-full p-3 bg-gray-700 rounded-lg" required>
+                    <input type="email" placeholder="Correo" class="w-full p-3 bg-gray-700 rounded-lg" required>
+                    <textarea placeholder="Mensaje" class="w-full p-3 bg-gray-700 rounded-lg h-32" required></textarea>
+                    <div class="flex justify-end">
+                        <button type="submit" class="bg-secondary px-6 py-3 rounded-lg text-gray-900 font-medium hover:scale-105 transition">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-6 text-center">
+        <p class="text-sm text-gray-400">© Jiahao Zhang — Última actualización: 25/10/2025</p>
+    </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
